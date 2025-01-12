@@ -9,21 +9,21 @@ function scroll() {
     var currentPos=window.scrollY;
     if (currentPos > neuPos) {
         for (let i = 0; i < headerArr.length; i++) {
-            headerArr[i].style.backgroundColor="rgba(82, 81, 81, 0.09)"
-            headerArr[i].style.boxShadow="none"
+            headerArr[i].style.backgroundColor="rgba(252, 123, 2, 0.871)"
             headerArr[i].style.transition="ease 1s"
         }
     } else {
         for (let i = 0; i < headerArr.length; i++) {
-            headerArr[i].style.backgroundColor="rgba(109, 108, 108, 0.6)"
-            headerArr[i].style.boxShadow="0px 3px 2.5px grey"
+            headerArr[i].style.backgroundColor=""
         }
     }
+
+    neuPos=currentPos
 }
 
 //defining what happens how a link is hovered
 
-function hover() {
+/*function hover() {
     var currentPos=window.scrollY;
     if (currentPos > neuPos) {
         for (let i = 0; i < anchorArr.length; i++) {
@@ -44,4 +44,4 @@ function hover() {
                 })
     }
     }
-}
+}*/
